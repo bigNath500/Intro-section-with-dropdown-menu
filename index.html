@@ -1,39 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+		
+		<title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<!-- bootstrap link -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-  Features
-  Company
-  Careers
-  About
+		<!-- custome css  -->
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
 
-  Login
-  Register
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top p-3 pt-2 pb-2 bg-white">
+			<div class="container-fluid">
+				<a class="navbar-brand fw-bolder fs-3" href="#">snap</a>
 
-  Make remote work
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+						<li class="nav-item dropdown me-3">
+							<a class="nav-link dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Features
+							</a>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+							<ul class="dropdown-menu shadow border-0 p-2 pt-4 pb-4 bg-white">
+								<li>
+									<a class="dropdown-item" href="#">
+										<div class="d-flex bd-highlight align-items-center">
+											<div class="ico_content me-2">
+												<img src="assets/images/icon-todo.svg" width="100%" />
+											</div>
+
+											<div class="text-muted small">
+												Todo List
+											</div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a class="dropdown-item" href="#">
+										<div class="d-flex bd-highlight align-items-center">
+											<div class="ico_content me-2">
+												<img src="assets/images/icon-calendar.svg" width="100%" />
+											</div>
+
+											<div class="text-muted small">
+												Calender
+											</div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a class="dropdown-item" href="#">
+										<div class="d-flex bd-highlight align-items-center">
+											<div class="ico_content me-2">
+												<img src="assets/images/icon-reminders.svg" width="100%" />
+											</div>
+
+											<div class="text-muted small">
+												Reminders
+											</div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a class="dropdown-item" href="#">
+										<div class="d-flex bd-highlight align-items-center">
+											<div class="ico_content me-2">
+												<img src="assets/images/icon-planning.svg" width="100%" />
+											</div>
+
+											<div class="text-muted small">
+												Planning
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav-item dropdown me-3">
+							<a class="nav-link dropdown-toggle text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Company
+							</a>
+
+							<ul class="dropdown-menu shadow border-0 p-2 pt-4 pb-4 bg-white">
+								<li>
+									<a class="dropdown-item" href="#">
+										<div class="text-muted small">History</div>
+									</a>
+								</li>
+
+								<li>
+									<a class="dropdown-item" href="#">
+										<div class="text-muted small">Our team</div>
+									</a>
+								</li>
+
+								<li>
+									<a class="dropdown-item text-muted small" href="#">
+										<div class="text-muted small">
+											Blog
+										</div>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav-item me-3">
+							<a class="nav-link text-muted" href="#">Careers</a>
+						</li>
+
+						<li class="nav-item me-3">
+							<a class="nav-link text-muted" href="#">About</a>
+						</li>
+					</ul>
+
+					<div class="ms-auto">
+						<div class="d-flex">
+							<button class="btn btn-outline-dark text-dark bg-transparent border-0 small me-3">Login</button>
+							<button class="btn btn-outline-dark bg-transparent text-dark small">Register</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- hero section -->
+
+		<section class="hero_container">
+			<div class="container h-100">
+				<div class="row h-100">
+					<div class="col-md-6 h-100">
+						<div class="d-flex h-100 align-items-center">
+							<div>
+								<h1 class="text-dark fw-bold">
+									Make <br> remote work
+								</h1>
+
+								<p class="mt-4 text-muted w-75">
+									Get your team in sync, no matter your location, Streamline processes, create team rituals, and watch productivity soar.
+								</p>
+
+								<div class="mt-5">
+									<button class="btn btn-outline-dark btn-lg bg-transparent text-dark">Learn more</button>
+								</div>
+
+								<div class="mt-5">
+									<div class="d-flex bd-highlight">
+										<div class="me-5">
+											<img src="assets/images/client-databiz.svg" width="100%" alt="client-databiz">
+										</div>
+
+										<div class="me-5">
+											<img src="assets/images/client-audiophile.svg" width="100%" alt="client-audiophile">
+										</div>
+
+										<div class="me-5">
+											<img src="assets/images/client-meet.svg" width="100%" alt="client-meet">
+										</div>
+
+										<div class="me-5">
+											<img src="assets/images/client-maker.svg" width="100%" alt="client-maker">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="text-center d-flex justify-content-center h-100 align-items-center">
+							<img src="assets/images/image-hero-desktop.png" width="70%" alt="png hero img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<div class="attribution text-center mt-4">
+			<small class="text-muted">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-dark fw-bold" target="_blank">Frontend Mentor</a>. 
+				Coded by <a href="#" class="text-dark fw-bold">Nathaniel Joseph</a>.
+			</small>
+		</div>
+
+		<!-- bootstrap js link -->
+		<script src="assets/js/bootstrap.min.js"></script>
+	</body>
 </html>

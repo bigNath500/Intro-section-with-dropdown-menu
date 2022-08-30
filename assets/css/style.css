@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+nav .navbar-brand {
+    font-weight: 900 !important;
+}
+
+nav .nav-link {
+    font-weight: 600 !important;
+    font-size: .9rem;
+}
+
+nav .dropdown-menu {
+    border-radius: 10px;
+    width: fit-content !important;
+}
+
+nav .dropdown-item:hover {
+    background: transparent !important;
+}
+
+.dropdown-item {
+    font-weight: 600;
+    font-size: 1rem;
+    width: fit-content !important;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-width: 2px;
+    font-weight: 600 !important;
+    font-size: .9rem !important;
+    border-radius: 10px;
+}
+
+.btn-lg {
+    padding: 13px 30px !important;
+    font-weight: 800 !important;
+    border-radius: 13px;
+}
+
+.hero_container {
+    height: 80vh;
+}
+
+.hero_container .container .col-md-6 .d-flex h1 {
+    font-size: 4rem;
+    line-height: 100% !important;
+    font-weight: 900 !important;
+}
+
+.hero_container .container .col-md-6 .d-flex p {
+    font-weight: 500;
+}
+
+/* .hero_container .container .col-md-6 .d-flex {
+    flex-direction: column !important;
+} */
